@@ -1,9 +1,15 @@
-const moduleA = require("./src/test");
+import './src/assets/css/normal.css'
+import './src/assets/css/style.less'
 
-
-require("./src/assets/css/normal.css");
-require("./src/assets/css/style.less");
-
-document.writeln('<h1>'+moduleA.name+'</h1>');
-document.writeln('<h1>'+moduleA.age+'</h1>');
-document.writeln('<h1>'+moduleA.sex+'</h1>');
+import Vue from 'vue'
+import LiuYuChen from "./src/components/LiuYuChen";
+new Vue({
+  el:"#app",
+  template:`<div id="app">
+              <liu-yu-chen/>
+            </div>`,
+  data:{
+    message:"你好啊，刘予琛！"
+  },
+  components:{LiuYuChen}
+});

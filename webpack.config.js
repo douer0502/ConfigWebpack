@@ -9,6 +9,12 @@ module.exports = {
     filename: "bundle.js",
     publicPath: 'dist/'
   },
+  //该配置项可以将Vue的版本设置为Vue-template，不设置的话默认是vue-runtime版本，在访问页面时会报错
+  resolve: {
+    alias: {
+      'vue$':'vue/dist/vue.esm.js'
+    }
+  },
   module: {
     rules: [
       {
