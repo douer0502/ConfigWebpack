@@ -10,7 +10,7 @@ const BannerPlugin = require('webpack/lib/BannerPlugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   //webpack打包入口：可以使字符串、数组、对象，因为我们的入口只有main.js，所以只是一个字符串
-  entry:'./main.js',
+  entry:'./src//main.js',
   //webpack打包出口：output通常是一个对象，至少包含两个属性，一个是绝对路径，一个是文件名
   //注意：dirname前面是两个下划线_ _，不是一个
   output:{

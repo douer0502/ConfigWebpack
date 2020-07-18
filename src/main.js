@@ -1,8 +1,8 @@
-import './src/assets/css/normal'
-import './src/assets/css/style'
+import './assets/css/normal'
+import './assets/css/style'
 
 import Vue from 'vue'
-import APP from "./src/APP";
+import APP from "./APP";
 new Vue({
   el:"#app",
   template:'<APP/>',
