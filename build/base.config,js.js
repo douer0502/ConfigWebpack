@@ -79,11 +79,5 @@ module.exports = {
     new VueLoaderPlugin(),
     new BannerPlugin("最终版权归刘佳宾所有"),
     new HtmlWebpackPlugin({template:'index.html'})
-  ],
-  devServer: {
-    contentBase: './dist',
-    inline: true
-    //这里可以配置端口号
-    // port:8080
-  }
+  ]
 };
